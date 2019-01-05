@@ -1,0 +1,209 @@
+* {
+  box-sizing: border-box;
+  font-family: Ubuntu, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* The wrapper contains all of the page's content besides the footer, which is pushed to the bottom of the page */
+.wrapper {
+  position: relative;
+  min-height: 100%;
+  padding-bottom: 130px;
+  overflow: auto;
+  background:#004466;
+  color:whitesmoke;
+}
+
+/* The footer is positioned at the bottom of the page */
+footer{
+  position: absolute;
+  visibility: visible;
+  
+  padding: 10px;
+  left:0;
+  bottom: -50px;
+  height:60px;
+  background-color:#0d0d0d;
+  color:#99ff33;
+  text-align: center;
+  width: 100%; 
+  border-top: 20px;  
+  border-top-color:#00ffff; 
+  border-width: 5px;
+  border-top-style: solid;    
+  }
+/* Navbar - top of the page */
+.navbar {
+  background: url("../Images/alien-planet.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  padding: 5px;
+  margin: 0;
+
+  border-bottom: 10px;  
+  border-bottom-color: #00ffff;
+  border-width: 5px;
+  border-bottom-style: solid;  
+}
+.navbar .navbar-brand {
+  background: #c0392b;
+  overflow: visible;
+  color:#99ff33;
+  border-color: #00ffff; 
+  border-width: 8px;
+  border-style:groove;
+}
+
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand:focus {
+  background:  #1E90FF;
+  display: block;
+}
+
+/* Search button - style */
+.btn.btn-primary:hover,
+.btn.btn-primary:focus,
+.btn.btn-primary:active,
+.btn.btn-primary.active {
+  color: #ffffff;
+  background-color:  #c0392b;
+  border-color: yellowgreen;
+}
+
+/* Set all the 'h' and 'p' style */
+h1{
+  color:  #ffff4d;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+h2{
+  color: #b32d00;
+  font-style: italic;
+  font-size: 40px;
+  text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
+}
+p{
+  color: #99ff33;
+}
+h3{
+  color:whitesmoke;
+  text-align: center;
+}
+/* This CSS styles: add border- to highlight */
+
+.highlight{
+  border-color: #99ff33;
+  border-style: solid;
+  border-width: 5px;
+  
+}
+/* This CSS styles: Table */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+tr:nth-child(even) {
+  background-color:#32669a;
+}
+tr:nth-child(odd) {
+  background-color:  #3e80c1;
+}
+tr:hover {
+  background-color: #ff9999;
+  color:black;
+}
+/* This CSS styles: Add margin to the top */
+.margin-top-30 {
+  margin-top: 30px;
+}
+
+/* The styles for the parallax */
+.hero {
+  position: relative;
+  height: 550px;
+  padding: 20px;
+  margin: 0;
+  background: black;
+  background-image: url("../Images/fantasy-alien-background.png");
+  background-attachment: fixed;
+  background-position: bottom center;
+  background-size: cover;
+}
+
+.hero h1 {
+  margin-top: 200px;
+  font-size: 0.1rem;
+  animation: title 1.2s forwards linear;
+}
+
+.hero p {
+  font-size: 2rem;
+  opacity: 0;
+  animation: subtitle 1.2s forwards linear;
+  animation-delay: 1.2s;
+}
+/* input placeholder color changes */
+.form-control::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #8e979f;
+}
+
+.form-control::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #8e979f;
+}
+
+.form-control:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #8e979f;
+}
+
+.form-control:-moz-placeholder {
+  /* Firefox 18- */
+  color: #8e979f;
+}
+
+/* keyframe animations which will be used to animate the title */
+@keyframes title {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    font-size: 7.5rem;
+    opacity: 1;
+  }
+}
+
+@keyframes smaller-title {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    font-size: 5.5rem;
+    opacity: 1;
+  }
+}
+
+@keyframes subtitle {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+/************** End of CSS ****************/

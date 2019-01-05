@@ -1,0 +1,122 @@
+<!-- # Unit 14 | Assignment - JavaScript and DOM Manipulation -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- All meta tags should be first in the header-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Title of dashboard-->
+  <title>UFO Finder: JavaScript and DOM Manipulation </title>
+  <!-- Bootstrap links -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <!-- Scripts-->
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">UFO Sightings  <i class="fab fa-reddit-alien"></i>
+            </a>
+        </div>
+      </div>
+    </nav>
+    <!-- end of Navigation -->
+    <!-- UFO Title -->
+    <div class="hero text-center">
+      <h1> UFO Sightings </h1>
+      <h2><strong><i class="fab fa-reddit-alien"></i> ALIENS-R-REAL</strong></h2>
+      <p>...The Truth is Out There...</p>
+    </div>
+    <!-- End of UFO Title -->
+    <!-- Main container-->
+    <div class="container">
+      <!-- Form: Automatic Table and Date Search
+      Using multiple `input` tags 
+      1. `date/time`
+      2. `city`
+      3. `state`
+      4. `country`
+      5. `shape`
+     Space between the form and the tittle -->
+      <div class = "row margin-top-30 card bg-primary highlight">
+        <div class="card-header">
+            <h3>Filter Search</h3>
+        </div>
+        <div class="card-body" style = "background: #1ab2ff;"> 
+          <form class="form-inline">
+            <div class="form-group">
+              <label for="date" class="mr-sm-4">Date:</label>
+              <input type="text" class="form-control mb-4 mr-sm-4" id="datetime" placeholder ="1/11/2010">
+            </div>
+            <div class="form-group">
+              <label for="city" class="mr-sm-4">City:</label>
+              <input type="text" class="form-control mb-4 mr-sm-4" id="city" placeholder="San Diego">
+            </div>
+            <div class="form-group">
+              <label for="state" class="mr-sm-4">State:</label>
+              <input type="text" class="form-control mb-4 mr-sm-4" id="state" placeholder="CA">
+            </div>
+            <br>
+            <div class="form-group">
+              <label for="country" class="mr-sm-4">Country:</label>
+              <input type = "text" class="form-control mb-4 mr-sm-4" id="country" placeholder="US">
+            </div>
+            <div class="form-group">
+              <label for="shape" class="mr-sm-4">Shape:</label>
+              <input  type="text" class="form-control mb-4 mr-sm-4" id="shape" placeholder="Circle">
+            </div>
+            <br>
+            <hr>
+            <div class="form-group" id = "filter-btn" type="submit" >
+                <button style="float: right" class="btn btn-primary btn-lg">Filter Table</button>
+            </div>
+           
+          </form>
+        </div>    
+      </div>   
+      <!-- End of Form-->
+      <!-- Set the table's header -->
+      <div class="row margin-top-30 ">
+        <table id="ufo-table" class="table">
+          <thead >
+            <tr style="background-color:#19334d;"> 
+              <th class="table-head">Date</th>
+              <th class="table-head">City</th>
+              <th class="table-head">State</th>
+              <th class="table-head">Country</th>
+              <th class="table-head">Shape</th>
+              <th class="table-head">Duration</th>
+              <th class="table-head">Comments</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+       <!-- End of Table-->
+    </div>
+    <hr>
+  <!-- End of Main container-->
+    <!-- Footer -->
+    <footer>
+    <!-- Copyright -->
+      <p>
+        UFO Sightings | <i class="far fa-copyright"></i> Copyright 2019: Minal Jajoo
+      </p>      
+    </footer>
+  </div>
+</body>
+ <!-- Scripts-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+<script src="static/js/data.js"></script>
+<script src="static/js/app.js"></script>
+</html>
+<!------------ End of HTML ---------------->
